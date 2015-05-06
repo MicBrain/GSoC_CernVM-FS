@@ -1,5 +1,5 @@
-# HTTP/2 Support for CernVM File System
 ![alt tag](https://cloud.githubusercontent.com/assets/5885065/7506024/f50b859a-f40e-11e4-809a-c9357ff0c98a.png)
+# HTTP/2 Support for CernVM File System
 
 ### Google Summer of Code Project
 
