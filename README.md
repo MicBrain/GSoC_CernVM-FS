@@ -2,7 +2,7 @@
 
 ### Google Summer of Code Project
 
-   Google Summer of Code is an annual international software engineering program that encourages university students to participate in open-source development. 
+   [Google Summer of Code][web1] is an annual international software engineering program that encourages university students to participate in open-source development. 
 
 ### What is CernVM-FS?
 
@@ -11,3 +11,6 @@
 * Source code: https://github.com/cvmfs/cvmfs
 * Documentation: http://cernvm.cern.ch/portal/filesystem/techinformation
 * Downloads: http://cernvm.cern.ch/portal/filesystem/downloads
+
+
+[web1]: https://www.google-melange.com
