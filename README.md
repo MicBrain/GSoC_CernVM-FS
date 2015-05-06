@@ -2,7 +2,7 @@
 
 ### Google Summer of Code Project
 
-   [Google Summer of Code][web1] is an annual international software engineering program that encourages university and college students aged 18 or over to participate in open-source development. This year I was selected to participate in Google Summer of Code 2015 program with the SFT (Software for Experiments) group, which is a part of CERN (European Organization for Nuclear Research, http://www.cern.ch).
+   [Google Summer of Code][web1] is an annual international software engineering program that encourages university and college students aged 18 or over to participate in open-source development. This year I was selected to participate in Google Summer of Code 2015 program with the SFT (Software for Experiments) group, which is a part of [CERN][web2] (European Organization for Nuclear Research).
 
 ### What is CernVM-FS?
 
@@ -14,3 +14,4 @@
 
 
 [web1]: https://www.google-melange.com
+[web2]: http://home.web.cern.ch
