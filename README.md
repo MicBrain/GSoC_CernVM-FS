@@ -3,7 +3,7 @@
 
 ### Google Summer of Code Project
 
-   [Google Summer of Code][web1] is an annual international software engineering program that encourages university and college students aged 18 or over to participate in open-source development. Accepted students can develop various software-coding projects under the guidence of their mentoring organizations. This year I was selected to participate in Google Summer of Code 2015 program with the SFT (Software for Experiments) group, which is a part of [CERN][web2] (European Organization for Nuclear Research). My proposal, called "HTTP/2 Support for CernVM File System", is about using the upcoming HTTP/2 technology to add new interesting functionalities to CernVM-FS such as connection multiplexing and fixing head-of-line blocking.
+   [Google Summer of Code][web1] is an annual international software engineering program that encourages university and college students aged 18 or over to participate in open-source development. Accepted students can develop various software-coding projects under the guidence of their mentoring organizations. This year I was selected to participate in Google Summer of Code 2015 program with the SFT (Software for Experiments) group, which is a part of [CERN][web2] (European Organization for Nuclear Research). My proposal, called "HTTP/2 Support for CernVM File System", is about using the upcoming HTTP/2 technology to add new interesting functionalities to CernVM-FS such as connection multiplexing and fixing head-of-line blocking. I am planning to add support for HTTP/2 in the CernVM-FS network code and re-arrange the code for data replication to use a multiplexed connection instead of parallel connections. 
 
 ### What is CernVM-FS?
 
