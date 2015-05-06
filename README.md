@@ -2,7 +2,7 @@
 
 ### Google Summer of Code Project
 
-   [Google Summer of Code][web1] is an annual international software engineering program that encourages university students to participate in open-source development. 
+   [Google Summer of Code][web1] is an annual international software engineering program that encourages university and college students to participate in open-source development. 
 
 ### What is CernVM-FS?
 
