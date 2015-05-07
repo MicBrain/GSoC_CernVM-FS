@@ -22,6 +22,10 @@ See the Wiki for my proposal, full documentation, examples, operational details 
 ### Bugs and Feedback
 
 For bugs, questions and discussions please use the [Github Issues][web5].
+For communication please contact:
+
+* GSoC student: Rafayel Mkrtchyan - rafamian@berkeley.edu
+* GSoC mentor:  Jacob Blomer - jblomer@cern.ch
 
 [web1]: https://www.google-melange.com
 [web2]: http://home.web.cern.ch
