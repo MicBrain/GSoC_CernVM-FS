@@ -19,7 +19,7 @@
 
 See the [Wiki][web4] for my proposal, full documentation, examples, operational details and other information.
 
-See the [Documentation] part for more information about the documentation and of my project and observations that I have made during development stage.
+See the [Documentation][web6] part for more information about the documentation and of my project and observations that I have made during development stage.
 
 ### Bugs and Feedback
 
@@ -34,3 +34,4 @@ Please do not hesitate to contact us if you have any questions about this specif
 [web3]: http://ph-dep-sft.web.cern.ch/article/175948
 [web4]: https://github.com/MicBrain/GSoC_CernVM-FS/wiki
 [web5]: https://github.com/MicBrain/GSoC_CernVM-FS/issues
+[web6]: https://github.com/MicBrain/GSoC_CernVM-FS/wiki/Documentation
