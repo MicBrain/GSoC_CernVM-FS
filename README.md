@@ -17,7 +17,7 @@
 
 ### Full Documentation
 
-See the Wiki for full documentation, examples, operational details and other information.
+See the Wiki for my proposal, full documentation, examples, operational details and other information.
 
 [web1]: https://www.google-melange.com
 [web2]: http://home.web.cern.ch
