@@ -26,6 +26,7 @@ For communication please contact:
 
 * GSoC student: Rafayel Mkrtchyan - rafamian@berkeley.edu
 * GSoC mentor:  Jacob Blomer - jblomer@cern.ch
+* SFT GSoC mailing list: sft-gsoc@cern.ch
 
 [web1]: https://www.google-melange.com
 [web2]: http://home.web.cern.ch
