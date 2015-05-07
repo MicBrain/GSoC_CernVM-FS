@@ -7,7 +7,7 @@
 
 ### What is CernVM-FS?
 
-   The SFT group focuses on providing common software for scientific experiments. CVMFS was created chiefly for the delivery of experiment software stacks for the LHC experiments at CERN; development continues to address the software
+   The SFT implements and maintains common scientific software for the physics experiments. CernVM File System (CernVM-FS) was created by SFT group chiefly for the delivery of experiment software stacks for the LHC experiments at CERN; development continues to address the software
 distribution needs of experiments worldwide. 
 
 The description of CernVM File System is taken from [CERN SFT GSoC 2015 Ideas page][web3].
