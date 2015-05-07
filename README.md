@@ -17,7 +17,7 @@
 
 ### Full Documentation
 
-See the Wiki for my proposal, full documentation, examples, operational details and other information.
+See the [Wiki][web4] for my proposal, full documentation, examples, operational details and other information.
 
 ### Bugs and Feedback
 
@@ -31,4 +31,5 @@ For communication please contact:
 [web1]: https://www.google-melange.com
 [web2]: http://home.web.cern.ch
 [web3]: http://ph-dep-sft.web.cern.ch/article/175948
+[web4]: https://github.com/MicBrain/GSoC_CernVM-FS/wiki
 [web5]: https://github.com/MicBrain/GSoC_CernVM-FS/issues
