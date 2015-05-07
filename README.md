@@ -19,6 +19,8 @@
 
 See the [Wiki][web4] for my proposal, full documentation, examples, operational details and other information.
 
+See the [Documentation] part for more information about the documentation and of my project and observations that I have made during development stage.
+
 ### Bugs and Feedback
 
 Please do not hesitate to contact us if you have any questions about this specific project and the program in general. For bugs, questions and discussions please use the [Github Issues][web5]. For communication please contact:
