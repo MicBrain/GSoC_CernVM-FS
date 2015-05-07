@@ -21,7 +21,7 @@ See the [Wiki][web4] for my proposal, full documentation, examples, operational 
 
 ### Bugs and Feedback
 
-Please do not hesitate to contact us if you have any question about the project and the program in general. For bugs, questions and discussions please use the [Github Issues][web5]. For communication please contact:
+Please do not hesitate to contact us if you have any question about this specific project and the program in general. For bugs, questions and discussions please use the [Github Issues][web5]. For communication please contact:
 
 * GSoC student: Rafayel Mkrtchyan - rafamian@berkeley.edu
 * GSoC mentor:  Jacob Blomer - jblomer@cern.ch
