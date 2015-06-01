@@ -35,4 +35,3 @@ Please do not hesitate to contact us if you have any questions about this specif
 [web4]: https://github.com/MicBrain/GSoC_CernVM-FS/wiki
 [web5]: https://github.com/MicBrain/GSoC_CernVM-FS/issues
 [web6]: https://github.com/MicBrain/GSoC_CernVM-FS/wiki/Documentation
-
