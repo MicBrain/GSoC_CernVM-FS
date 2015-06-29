@@ -1,0 +1,41 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/cvmfs_only.dir/logging.cc.o"
+  "CMakeFiles/cvmfs_only.dir/signature.cc.o"
+  "CMakeFiles/cvmfs_only.dir/quota.cc.o"
+  "CMakeFiles/cvmfs_only.dir/hash.cc.o"
+  "CMakeFiles/cvmfs_only.dir/cache.cc.o"
+  "CMakeFiles/cvmfs_only.dir/monitor.cc.o"
+  "CMakeFiles/cvmfs_only.dir/util.cc.o"
+  "CMakeFiles/cvmfs_only.dir/uuid.cc.o"
+  "CMakeFiles/cvmfs_only.dir/backoff.cc.o"
+  "CMakeFiles/cvmfs_only.dir/compression.cc.o"
+  "CMakeFiles/cvmfs_only.dir/sanitizer.cc.o"
+  "CMakeFiles/cvmfs_only.dir/dns.cc.o"
+  "CMakeFiles/cvmfs_only.dir/download.cc.o"
+  "CMakeFiles/cvmfs_only.dir/wpad.cc.o"
+  "CMakeFiles/cvmfs_only.dir/manifest.cc.o"
+  "CMakeFiles/cvmfs_only.dir/whitelist.cc.o"
+  "CMakeFiles/cvmfs_only.dir/manifest_fetch.cc.o"
+  "CMakeFiles/cvmfs_only.dir/globals.cc.o"
+  "CMakeFiles/cvmfs_only.dir/sql.cc.o"
+  "CMakeFiles/cvmfs_only.dir/catalog_sql.cc.o"
+  "CMakeFiles/cvmfs_only.dir/catalog.cc.o"
+  "CMakeFiles/cvmfs_only.dir/catalog_mgr.cc.o"
+  "CMakeFiles/cvmfs_only.dir/catalog_mgr_client.cc.o"
+  "CMakeFiles/cvmfs_only.dir/catalog_counters.cc.o"
+  "CMakeFiles/cvmfs_only.dir/directory_entry.cc.o"
+  "CMakeFiles/cvmfs_only.dir/file_chunk.cc.o"
+  "CMakeFiles/cvmfs_only.dir/xattr.cc.o"
+  "CMakeFiles/cvmfs_only.dir/statistics.cc.o"
+  "CMakeFiles/cvmfs_only.dir/sqlitevfs.cc.o"
+  "CMakeFiles/cvmfs_only.dir/fetch.cc.o"
+  "CMakeFiles/cvmfs_only.dir/libcvmfs_int.cc.o"
+  "CMakeFiles/cvmfs_only.dir/libcvmfs.cc.o"
+  "libcvmfs_only.pdb"
+  "libcvmfs_only.a"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/cvmfs_only.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

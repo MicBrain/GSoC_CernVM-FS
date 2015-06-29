@@ -1,0 +1,698 @@
+The system is: Linux - 3.14.13-c9 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/ubuntu/workspace/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/ubuntu/workspace/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3936763381/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3936763381.dir/build.make CMakeFiles/cmTryCompileExec3936763381.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3936763381.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3936763381.dir/testCCompiler.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec3936763381
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3936763381.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3936763381.dir/testCCompiler.c.o  -o cmTryCompileExec3936763381 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1229680397/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1229680397.dir/build.make CMakeFiles/cmTryCompileExec1229680397.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1229680397
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1229680397.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1229680397 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1229680397' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1229680397 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1229680397/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1229680397.dir/build.make CMakeFiles/cmTryCompileExec1229680397.dir/build]
+  ignore line: [make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1229680397]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1229680397.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1229680397 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1229680397' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1229680397 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1229680397] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec1229680397.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3300311509/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3300311509.dir/build.make CMakeFiles/cmTryCompileExec3300311509.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3300311509.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3300311509.dir/testCXXCompiler.cxx.o -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3300311509
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3300311509.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3300311509.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3300311509 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2686373233/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2686373233.dir/build.make CMakeFiles/cmTryCompileExec2686373233.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2686373233
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2686373233.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2686373233 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2686373233' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2686373233 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2686373233/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2686373233.dir/build.make CMakeFiles/cmTryCompileExec2686373233.dir/build]
+  ignore line: [make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2686373233]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2686373233.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2686373233 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2686373233' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2686373233 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2686373233] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec2686373233.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/xattr.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2198970639/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2198970639.dir/build.make CMakeFiles/cmTryCompileExec2198970639.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2198970639.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec2198970639.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2198970639
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2198970639.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec2198970639.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2198970639 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file zlib.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3174996242/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3174996242.dir/build.make CMakeFiles/cmTryCompileExec3174996242.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3174996242.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3174996242.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3174996242
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3174996242.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3174996242.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3174996242 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file netinet/in.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2001867367/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2001867367.dir/build.make CMakeFiles/cmTryCompileExec2001867367.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2001867367.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec2001867367.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2001867367
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2001867367.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec2001867367.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2001867367 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file arpa/inet.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3391500704/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3391500704.dir/build.make CMakeFiles/cmTryCompileExec3391500704.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3391500704.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3391500704.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3391500704
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3391500704.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3391500704.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3391500704 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/socket.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2669964801/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2669964801.dir/build.make CMakeFiles/cmTryCompileExec2669964801.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2669964801.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec2669964801.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2669964801
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2669964801.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec2669964801.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2669964801 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/un.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1831543880/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1831543880.dir/build.make CMakeFiles/cmTryCompileExec1831543880.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1831543880.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec1831543880.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1831543880
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1831543880.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec1831543880.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1831543880 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3032001858/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3032001858.dir/build.make CMakeFiles/cmTryCompileExec3032001858.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3032001858.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3032001858.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3032001858
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3032001858.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3032001858.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3032001858 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/uio.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3114246803/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3114246803.dir/build.make CMakeFiles/cmTryCompileExec3114246803.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3114246803.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3114246803.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3114246803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3114246803.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3114246803.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3114246803 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2449960939/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2449960939.dir/build.make CMakeFiles/cmTryCompileExec2449960939.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2449960939.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec2449960939.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2449960939
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2449960939.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec2449960939.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2449960939 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3347338768/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3347338768.dir/build.make CMakeFiles/cmTryCompileExec3347338768.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3347338768.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3347338768.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3347338768
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3347338768.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3347338768.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3347338768 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/wait.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec568486874/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec568486874.dir/build.make CMakeFiles/cmTryCompileExec568486874.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec568486874.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec568486874.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec568486874
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec568486874.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec568486874.dir/CheckIncludeFile.c.o  -o cmTryCompileExec568486874 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/select.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2949445388/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2949445388.dir/build.make CMakeFiles/cmTryCompileExec2949445388.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2949445388.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec2949445388.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2949445388
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2949445388.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec2949445388.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2949445388 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3442426054/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3442426054.dir/build.make CMakeFiles/cmTryCompileExec3442426054.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3442426054.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3442426054.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3442426054
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3442426054.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3442426054.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3442426054 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file termios.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2207186308/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2207186308.dir/build.make CMakeFiles/cmTryCompileExec2207186308.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2207186308.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec2207186308.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2207186308
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2207186308.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec2207186308.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2207186308 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file utime.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec862436310/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec862436310.dir/build.make CMakeFiles/cmTryCompileExec862436310.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec862436310.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec862436310.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec862436310
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec862436310.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec862436310.dir/CheckIncludeFile.c.o  -o cmTryCompileExec862436310 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1293784990/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1293784990.dir/build.make CMakeFiles/cmTryCompileExec1293784990.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1293784990.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec1293784990.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1293784990
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1293784990.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec1293784990.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1293784990 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec633381215/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec633381215.dir/build.make CMakeFiles/cmTryCompileExec633381215.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec633381215.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec633381215.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec633381215
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec633381215.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec633381215.dir/CheckIncludeFile.c.o  -o cmTryCompileExec633381215 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1804727529/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1804727529.dir/build.make CMakeFiles/cmTryCompileExec1804727529.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1804727529.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec1804727529.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1804727529
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1804727529.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec1804727529.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1804727529 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec579867590/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec579867590.dir/build.make CMakeFiles/cmTryCompileExec579867590.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec579867590.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec579867590.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec579867590
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec579867590.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec579867590.dir/CheckIncludeFile.c.o  -o cmTryCompileExec579867590 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec657061316/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec657061316.dir/build.make CMakeFiles/cmTryCompileExec657061316.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec657061316.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec657061316.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec657061316
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec657061316.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec657061316.dir/CheckIncludeFile.c.o  -o cmTryCompileExec657061316 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file netdb.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3952736020/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3952736020.dir/build.make CMakeFiles/cmTryCompileExec3952736020.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3952736020.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3952736020.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3952736020
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3952736020.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3952736020.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3952736020 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4291768639/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4291768639.dir/build.make CMakeFiles/cmTryCompileExec4291768639.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4291768639.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec4291768639.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4291768639
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4291768639.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec4291768639.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4291768639 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3083580160/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3083580160.dir/build.make CMakeFiles/cmTryCompileExec3083580160.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3083580160.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3083580160.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3083580160
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3083580160.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3083580160.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3083580160 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file execinfo.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec666249028/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec666249028.dir/build.make CMakeFiles/cmTryCompileExec666249028.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec666249028.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec666249028.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec666249028
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec666249028.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec666249028.dir/CheckIncludeFile.c.o  -o cmTryCompileExec666249028 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file poll.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1305445929/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1305445929.dir/build.make CMakeFiles/cmTryCompileExec1305445929.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1305445929.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec1305445929.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1305445929
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1305445929.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec1305445929.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1305445929 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pwd.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3459459335/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3459459335.dir/build.make CMakeFiles/cmTryCompileExec3459459335.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3459459335.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3459459335.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3459459335
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3459459335.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3459459335.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3459459335 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file grp.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1114694250/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1114694250.dir/build.make CMakeFiles/cmTryCompileExec1114694250.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1114694250.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec1114694250.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1114694250
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1114694250.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec1114694250.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1114694250 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/statfs.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3822111272/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3822111272.dir/build.make CMakeFiles/cmTryCompileExec3822111272.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3822111272.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3822111272.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3822111272
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3822111272.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3822111272.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3822111272 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file attr/xattr.h exists passed with the following output:
+Change Dir: /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3173111948/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3173111948.dir/build.make CMakeFiles/cmTryCompileExec3173111948.dir/build
+make[1]: Entering directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3173111948.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D__XATTR_H__ -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls    -o CMakeFiles/cmTryCompileExec3173111948.dir/CheckIncludeFile.c.o   -c /home/ubuntu/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3173111948
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3173111948.dir/link.txt --verbose=1
+/usr/bin/cc   -g -fno-strict-aliasing -fasynchronous-unwind-tables -fno-omit-frame-pointer -fvisibility=hidden -Wall -D_REENTRANT -D__EXTENSIONS__ -D_LARGEFILE64_SOURCE -D__LARGE64_FILES   -fno-optimize-sibling-calls     CMakeFiles/cmTryCompileExec3173111948.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3173111948 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/workspace/build/CMakeFiles/CMakeTmp'
+
+

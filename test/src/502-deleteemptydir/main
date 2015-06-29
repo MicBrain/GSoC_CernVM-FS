@@ -1,0 +1,97 @@
+
+cvmfs_test_name="Delete Empty Directory"
+cvmfs_test_autofs_on_startup=false
+
+produce_files_in() {
+	local working_dir=$1
+
+	pushdir $working_dir
+
+	mkdir dir1 # stays empty
+  mkdir dir2
+  mkdir dir3
+  mkdir dir4 # stays empty
+  mkdir dir5
+  mkdir dir6 # stays empty
+
+  mkdir dir2/ndir1
+  mkdir dir2/ndir2
+
+  mkdir dir3/ndir3
+
+  mkdir dir5/ndir4
+  mkdir dir5/ndir5
+  mkdir dir5/ndir6
+
+  mkdir dir2/ndir1/nndir1
+  mkdir dir2/ndir1/nndir2
+
+  mkdir dir5/ndir5/nndir3
+
+	popdir
+}
+
+change_files_in() {
+  local working_dir=$1
+
+  pushdir $working_dir
+
+  rmdir dir1
+  rm -fR dir6
+
+  popdir
+}
+
+cvmfs_run_test() {
+  logfile=$1
+  local repo_dir=/cvmfs/$CVMFS_TEST_REPO
+
+  local scratch_dir=$(pwd)
+  mkdir reference_dir
+  local reference_dir=$scratch_dir/reference_dir
+
+  echo "create a fresh repository named $CVMFS_TEST_REPO with user $CVMFS_TEST_USER"
+  create_empty_repo $CVMFS_TEST_REPO $CVMFS_TEST_USER || return $?
+
+  # ============================================================================
+
+  echo "starting transaction to edit repository"
+  start_transaction $CVMFS_TEST_REPO || return $?
+
+  echo "putting some stuff in the new repository"
+  produce_files_in $repo_dir || return 3
+
+  echo "putting exactly the same stuff in the scratch space for comparison"
+  produce_files_in $reference_dir || return 4
+
+  echo "creating CVMFS snapshot"
+  publish_repo $CVMFS_TEST_REPO || return $?
+
+  echo "compare the results of cvmfs to our reference copy"
+  compare_directories $repo_dir $reference_dir || return $?
+
+  # ============================================================================
+
+  echo "init a new transaction to change something in repository $CVMFS_TEST_REPO"
+  start_transaction $CVMFS_TEST_REPO || return $?
+
+  echo "change stuff in the repository"
+  change_files_in $repo_dir || return 7
+
+  echo "change exactly the same stuff in the scratch space"
+  change_files_in $reference_dir || return 8
+
+  echo "creating CVMFS snapshot"
+  publish_repo $CVMFS_TEST_REPO || return $?
+
+  echo "compare the changed directories"
+  compare_directories $repo_dir $reference_dir || return $?
+
+  # ============================================================================
+
+  echo "check catalog and data integrity"
+  check_repository $CVMFS_TEST_REPO -i || return $?
+
+  return 0
+}
+

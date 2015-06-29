@@ -1,0 +1,18 @@
+21:55:45.223146 == Info:   Trying 127.0.0.1...
+21:55:45.278217 == Info: Connected to 127.0.0.1 (127.0.0.1) port 8990 (#0)
+21:55:45.295481 => Send header, 97 bytes (0x61)
+0000: GET /we/are/all/twits/42 HTTP/1.1
+0023: Host: 127.0.0.1:8990
+0039: User-Agent: curl/7.43.0
+0052: Accept: */*
+005f: 
+21:55:45.321980 <= Recv header, 26 bytes (0x1a)
+0000: HTTP/1.1 302 OK swsclose
+21:55:45.332183 <= Recv header, 36 bytes (0x24)
+0000: Location: ../m o o.html/420002    
+21:55:45.333108 <= Recv header, 37 bytes (0x25)
+0000: Date: Thu, 09 Nov 2010 14:49:00 GMT
+21:55:45.334907 <= Recv header, 19 bytes (0x13)
+0000: Connection: close
+21:55:45.402245 <= Recv header, 2 bytes (0x2)
+0000: 

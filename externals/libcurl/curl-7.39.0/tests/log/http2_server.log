@@ -1,0 +1,3 @@
+21:50:25.779418 select() failed with error: (4) Interrupted system call
+21:50:25.779552 signalled to die
+21:50:25.779644 ========> IPv4 sws (port: 9013 pid: 22481) exits with signal (2)

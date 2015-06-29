@@ -1,0 +1,15 @@
+==13315== Memcheck, a memory error detector
+==13315== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==13315== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==13315== Command: /home/ubuntu/workspace/externals/libcurl/curl-7.43.0/src/.libs/lt-curl --output log/curl48.out --include --trace-ascii log/trace48 --trace-time -d foo=moo&moo=poo http://127.0.0.1:8990/48 -G -I http://127.0.0.1:8990/48
+==13315== Parent PID: 13314
+==13315== 
+==13315== 
+==13315== HEAP SUMMARY:
+==13315==     in use at exit: 0 bytes in 0 blocks
+==13315==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==13315== 
+==13315== All heap blocks were freed -- no leaks are possible
+==13315== 
+==13315== For counts of detected and suppressed errors, rerun with: -v
+==13315== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

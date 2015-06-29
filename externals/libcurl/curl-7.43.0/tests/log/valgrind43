@@ -1,0 +1,6 @@
+==13191== Memcheck, a memory error detector
+==13191== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==13191== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==13191== Command: /home/ubuntu/workspace/externals/libcurl/curl-7.43.0/src/.libs/lt-curl --output log/curl43.out --include --trace-ascii log/trace43 --trace-time http://127.0.0.1:8990/want/43 -L -x 127.0.0.1:8990
+==13191== Parent PID: 13190
+==13191== 

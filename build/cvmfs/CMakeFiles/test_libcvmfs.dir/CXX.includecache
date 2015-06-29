@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/workspace/cvmfs/libcvmfs.h
+sys/stat.h
+-
+unistd.h
+-
+
+/home/ubuntu/workspace/cvmfs/test_libcvmfs.cc
+cvmfs_config.h
+/home/ubuntu/workspace/cvmfs/cvmfs_config.h
+errno.h
+-
+inttypes.h
+-
+cassert
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+ctime
+-
+map
+-
+string
+-
+libcvmfs.h
+/home/ubuntu/workspace/cvmfs/libcvmfs.h
+
+cvmfs_config.h
+

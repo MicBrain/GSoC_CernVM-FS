@@ -1,0 +1,1941 @@
+Start test suite for cvmfs CernVM-FS version 2.2.0
+Mon Jun 29 19:48:31 UTC 2015
+
+
+
+
+
+
+
+
+
+
+-- Testing Dummy test (Mon Jun 29 19:48:31 UTC 2015 / test number 000)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Check installation (Mon Jun 29 19:48:31 UTC 2015 / test number 001)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Probing atlas, lhcb (Mon Jun 29 19:48:31 UTC 2015 / test number 002)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Nested catalogs with same prefix (Mon Jun 29 19:48:31 UTC 2015 / test number 003)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Setup Davinci (Mon Jun 29 19:48:31 UTC 2015 / test number 004)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Setup ATLAS (Mon Jun 29 19:48:31 UTC 2015 / test number 005)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Linux Kernel Compile (Mon Jun 29 19:48:31 UTC 2015 / test number 006)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Experiment framework test jobs (Mon Jun 29 19:48:31 UTC 2015 / test number 007)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Default domain (Mon Jun 29 19:48:31 UTC 2015 / test number 008)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Tar Linux Kernel (Mon Jun 29 19:48:31 UTC 2015 / test number 009)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Recursive listing (Mon Jun 29 19:48:31 UTC 2015 / test number 010)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing ls -l (Mon Jun 29 19:48:31 UTC 2015 / test number 012)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Caching of certificate (Mon Jun 29 19:48:31 UTC 2015 / test number 013)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Recover from corrupted LRU DB (Mon Jun 29 19:48:31 UTC 2015 / test number 014)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Rebuild cache db after crash (Mon Jun 29 19:48:31 UTC 2015 / test number 015)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing DNS Unreachable (Mon Jun 29 19:48:32 UTC 2015 / test number 016)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing DNS Timeout (Mon Jun 29 19:48:32 UTC 2015 / test number 017)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing HTTP Server Unreachable (Mon Jun 29 19:48:32 UTC 2015 / test number 018)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing HTTP Timeout (Mon Jun 29 19:48:32 UTC 2015 / test number 019)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing 404 on Repository URL (Mon Jun 29 19:48:32 UTC 2015 / test number 020)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Post Mortem Stacktrace Retrieval (Mon Jun 29 19:48:32 UTC 2015 / test number 021)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Stacktrace from Private Mount Point (Mon Jun 29 19:48:32 UTC 2015 / test number 022)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Path Traversal while Catalog Reloading (Mon Jun 29 19:48:32 UTC 2015 / test number 023)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Reload during overcommitted asetup (Mon Jun 29 19:48:32 UTC 2015 / test number 024)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing 404 Proxy Failover (Mon Jun 29 19:48:32 UTC 2015 / test number 025)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Recursive listing of ATLAS with small cache (Mon Jun 29 19:48:32 UTC 2015 / test number 026)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Auto unmount of stalled mountpoint after crash (Mon Jun 29 19:48:32 UTC 2015 / test number 027)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Negative cache and I/O errors (Mon Jun 29 19:48:32 UTC 2015 / test number 028)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing DoS protection (Mon Jun 29 19:48:32 UTC 2015 / test number 029)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing 404 on Root Catalog Download (Mon Jun 29 19:48:32 UTC 2015 / test number 030)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Cache cleanup (Mon Jun 29 19:48:32 UTC 2015 / test number 034)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Unpin catalogs on umount (Mon Jun 29 19:48:32 UTC 2015 / test number 035)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Overload cache with pinned catalogs (Mon Jun 29 19:48:32 UTC 2015 / test number 036)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Enforce CVMFS_STRICT_MOUNT (Mon Jun 29 19:48:32 UTC 2015 / test number 037)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Proper application of CVMFS_MAX_TTL (Mon Jun 29 19:48:32 UTC 2015 / test number 038)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Reload racing with ALARM signal (Mon Jun 29 19:48:32 UTC 2015 / test number 039)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Alien cache (Mon Jun 29 19:48:32 UTC 2015 / test number 040)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Read-only cache (Mon Jun 29 19:48:32 UTC 2015 / test number 041)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Cleanup left-over pipes (Mon Jun 29 19:48:32 UTC 2015 / test number 042)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Warn on high inode watermark (Mon Jun 29 19:48:32 UTC 2015 / test number 043)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Trigger unpin listener on mount (Mon Jun 29 19:48:32 UTC 2015 / test number 044)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Probing oasis (Mon Jun 29 19:48:32 UTC 2015 / test number 045)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Using config files from /etc/cvmfs/default.d/ (Mon Jun 29 19:48:32 UTC 2015 / test number 046)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Certificate blacklist (Mon Jun 29 19:48:32 UTC 2015 / test number 047)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Export CVMFS_FQRN (Mon Jun 29 19:48:32 UTC 2015 / test number 048)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Change directory to config file being parsed (Mon Jun 29 19:48:32 UTC 2015 / test number 049)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Fetch configuration from config repository (Mon Jun 29 19:48:32 UTC 2015 / test number 050)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Mount with Broken Public Key Files (Mon Jun 29 19:48:32 UTC 2015 / test number 051)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Round-robin DNS handling (Mon Jun 29 19:48:32 UTC 2015 / test number 052)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Uuid generation and cache (Mon Jun 29 19:48:32 UTC 2015 / test number 053)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Query Geo-API for server and fallback proxy order (Mon Jun 29 19:48:32 UTC 2015 / test number 054)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Ownership of files and directories (Mon Jun 29 19:48:32 UTC 2015 / test number 055)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Low speed limit (Mon Jun 29 19:48:32 UTC 2015 / test number 056)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Concurrent creation of the cache directory (Mon Jun 29 19:48:32 UTC 2015 / test number 057)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing CVMFS_PUBLIC_KEY has precedence over CVMFS_KEYS_DIR (Mon Jun 29 19:48:32 UTC 2015 / test number 058)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Setting CVMFS_FALLBACK_PROXY (Mon Jun 29 19:48:33 UTC 2015 / test number 059)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Hide extended attributes (Mon Jun 29 19:48:33 UTC 2015 / test number 060)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Mark cvmfs to survive systemd process termination on shutdown (Mon Jun 29 19:48:33 UTC 2015 / test number 061)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Populate Repository (Mon Jun 29 19:48:33 UTC 2015 / test number 500)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Change Repository (Mon Jun 29 19:48:33 UTC 2015 / test number 501)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Delete Empty Directory (Mon Jun 29 19:48:33 UTC 2015 / test number 502)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Delete Directory Recursive (Mon Jun 29 19:48:33 UTC 2015 / test number 503)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Delete and Recreate Directory (Mon Jun 29 19:48:33 UTC 2015 / test number 504)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create Nested Catalog in Directory Tree (Mon Jun 29 19:48:33 UTC 2015 / test number 505)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Delete Nested Catalog (Merge into Parent) (Mon Jun 29 19:48:33 UTC 2015 / test number 506)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Remove Intermediate Nested Catalog (Mon Jun 29 19:48:33 UTC 2015 / test number 507)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Simulate CVMFS Development (Mon Jun 29 19:48:33 UTC 2015 / test number 508)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Creating Symlinks in Directory (Mon Jun 29 19:48:33 UTC 2015 / test number 509)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Creating File Chunks (Mon Jun 29 19:48:33 UTC 2015 / test number 510)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Remove Chunked File (Mon Jun 29 19:48:33 UTC 2015 / test number 511)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Move Chunked File To Nested Catalog (Mon Jun 29 19:48:33 UTC 2015 / test number 512)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Merge Nested Catalog Containing Chunked File (Mon Jun 29 19:48:33 UTC 2015 / test number 513)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Change a Chunked File (Mon Jun 29 19:48:33 UTC 2015 / test number 514)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create Stratum1 snapshot (Mon Jun 29 19:48:33 UTC 2015 / test number 515)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create Stratum1 snapshot with nested Catalogs and Chunked Files (Mon Jun 29 19:48:33 UTC 2015 / test number 516)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Touch a Nested Catalog (Mon Jun 29 19:48:33 UTC 2015 / test number 517)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Hardlinks (Mon Jun 29 19:48:33 UTC 2015 / test number 518)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Import Legacy Repository (Mon Jun 29 19:48:33 UTC 2015 / test number 519)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing History (Mon Jun 29 19:48:33 UTC 2015 / test number 520)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create a Series of Stratum1 snapshots (Mon Jun 29 19:48:33 UTC 2015 / test number 521)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing 404 on Data Chunk (Mon Jun 29 19:48:33 UTC 2015 / test number 522)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Data Corruption in Data Chunk (Mon Jun 29 19:48:33 UTC 2015 / test number 523)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Data Corruption in Manifest File (Mon Jun 29 19:48:33 UTC 2015 / test number 524)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Split a Huge Repository into Nested Catalogs (Mon Jun 29 19:48:33 UTC 2015 / test number 525)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Recreate nested catalog tree (Mon Jun 29 19:48:33 UTC 2015 / test number 526)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Non zero return value on failed publish (Mon Jun 29 19:48:33 UTC 2015 / test number 527)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Recreate Repository Spool Area (Mon Jun 29 19:48:33 UTC 2015 / test number 528)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create RIPEMD160 repository (Mon Jun 29 19:48:33 UTC 2015 / test number 529)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Recreate Repository Spool Area (Default Key Location) (Mon Jun 29 19:48:33 UTC 2015 / test number 530)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Replace Symlink/Regular File by Directory (Mon Jun 29 19:48:33 UTC 2015 / test number 531)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Replace Directory by Symlink/Regular File (Mon Jun 29 19:48:33 UTC 2015 / test number 532)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Volatile cache set (Mon Jun 29 19:48:33 UTC 2015 / test number 533)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Prevent Interleaving Publish Operations (Mon Jun 29 19:48:33 UTC 2015 / test number 534)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Send and Receive Letters (Mon Jun 29 19:48:33 UTC 2015 / test number 535)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Repository Health Check (Disabled Auto-Repair) (Mon Jun 29 19:48:34 UTC 2015 / test number 536)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Backend In Symlinked Directory (Mon Jun 29 19:48:34 UTC 2015 / test number 537)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create Stratum1 Snapshot In Symlinked Backend (Mon Jun 29 19:48:34 UTC 2015 / test number 538)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Use CernVM-FS Backend with Symlinked /var/spool/cvmfs (Mon Jun 29 19:48:34 UTC 2015 / test number 539)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Forbid .cvmfscatalog in root directory (Mon Jun 29 19:48:34 UTC 2015 / test number 540)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Preload cache (Mon Jun 29 19:48:34 UTC 2015 / test number 541)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Local File Backend Health Check (Mon Jun 29 19:48:34 UTC 2015 / test number 542)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Local File Backend Health Check (Machine Readable) (Mon Jun 29 19:48:34 UTC 2015 / test number 543)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Manage Nested Catalogs Using .cvmfsdirtab (Mon Jun 29 19:48:34 UTC 2015 / test number 544)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Warn on Huge Catalog Creation (Mon Jun 29 19:48:34 UTC 2015 / test number 545)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Advanced Nested Catalogs Managagement Using .cvmfsdirtab (Mon Jun 29 19:48:34 UTC 2015 / test number 546)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create Intermediate Nested Catalog (Mon Jun 29 19:48:34 UTC 2015 / test number 547)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create Intermediate Nested Catalog (2) (Mon Jun 29 19:48:34 UTC 2015 / test number 548)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Exclusion Patterns in .cvmfsdirtab (Mon Jun 29 19:48:34 UTC 2015 / test number 549)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Migrating CernVM-FS 2.0 Repository to 2.1.x (Mon Jun 29 19:48:34 UTC 2015 / test number 550)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Publish with open file descriptors (Mon Jun 29 19:48:34 UTC 2015 / test number 551)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Access repository tags by date (Mon Jun 29 19:48:34 UTC 2015 / test number 552)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Defragment due to Free Database Pages (Mon Jun 29 19:48:34 UTC 2015 / test number 553)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Defragment due to Wasted Row IDs (Mon Jun 29 19:48:34 UTC 2015 / test number 554)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Manually Setting the Repository Revision Number (Mon Jun 29 19:48:34 UTC 2015 / test number 555)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Basic Garbage Collection (Mon Jun 29 19:48:34 UTC 2015 / test number 557)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection With Nested Catalogs (Mon Jun 29 19:48:34 UTC 2015 / test number 558)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection With Named Tag Awareness (Mon Jun 29 19:48:34 UTC 2015 / test number 559)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection With Partial History Preservation (Mon Jun 29 19:48:34 UTC 2015 / test number 560)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection With Multiple Hash Algorithms (Mon Jun 29 19:48:34 UTC 2015 / test number 561)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Rename Cross-Branch Directory in AUFS (exdev) (Mon Jun 29 19:48:34 UTC 2015 / test number 562)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection After Legacy Repository Import (Mon Jun 29 19:48:34 UTC 2015 / test number 563)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Detect AUFS Kernel Deadlock Vulnerability (Mon Jun 29 19:48:34 UTC 2015 / test number 564)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Exclusion Patterns With Wildcards in .cvmfsdirtab (Mon Jun 29 19:48:34 UTC 2015 / test number 565)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Recreate Manually Deleted Nested Catalog with .cvmfsdirtab (Mon Jun 29 19:48:34 UTC 2015 / test number 566)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create Repository with Provided Keychain (Mon Jun 29 19:48:34 UTC 2015 / test number 567)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Import Corrupt Legacy Repository (Mon Jun 29 19:48:34 UTC 2015 / test number 568)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Non-Zero Return Code on Failing Repo-Management Commands (Mon Jun 29 19:48:34 UTC 2015 / test number 569)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Handle Races of Publish Remount and File Descriptors (Mon Jun 29 19:48:34 UTC 2015 / test number 570)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Local Backend File Permissions with umask (Mon Jun 29 19:48:34 UTC 2015 / test number 571)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Proxy Failover Scenarios (Mon Jun 29 19:48:34 UTC 2015 / test number 572)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection Until Specified Timestamp (Mon Jun 29 19:48:35 UTC 2015 / test number 573)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection Until Specified Timestamp With Named Snapshots (Mon Jun 29 19:48:35 UTC 2015 / test number 574)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Disable Garbage Collection (Mon Jun 29 19:48:35 UTC 2015 / test number 575)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collection on Replication Server (Mon Jun 29 19:48:35 UTC 2015 / test number 576)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Find Intermediate Revisions after Garbage Collection on Stratum0 (Mon Jun 29 19:48:35 UTC 2015 / test number 577)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Automatic Garbage Collection (Mon Jun 29 19:48:35 UTC 2015 / test number 578)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Garbage Collect Orphaned Named Snapshots on Stratum1 (Mon Jun 29 19:48:35 UTC 2015 / test number 579)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Automatic Garbage Collection on Stratum 1 (Mon Jun 29 19:48:35 UTC 2015 / test number 580)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Replicate Garbage Collected Repository (Mon Jun 29 19:48:35 UTC 2015 / test number 581)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Auto-Repair Bogus Mountpoints (Mon Jun 29 19:48:35 UTC 2015 / test number 582)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Mounting repo with http redirects (Mon Jun 29 19:48:35 UTC 2015 / test number 583)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Interleaving Stratum1 Snapshot Behaviour (Mon Jun 29 19:48:35 UTC 2015 / test number 584)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Extended attributes (Mon Jun 29 19:48:35 UTC 2015 / test number 585)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Slash-Asterisk Rule in .cvmfsdirtab (Mon Jun 29 19:48:35 UTC 2015 / test number 586)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Server Hooks (Mon Jun 29 19:48:35 UTC 2015 / test number 587)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Create SHA-256 repository (Mon Jun 29 19:48:35 UTC 2015 / test number 588)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Map UID and GID in Repository on Catalog Level (Mon Jun 29 19:48:35 UTC 2015 / test number 589)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Publish Many Directories (Mon Jun 29 19:48:35 UTC 2015 / test number 590)
+failed to clean environment
+failed to setup environment
+
+
+
+
+
+
+
+
+
+
+-- Testing Import Contemporary Repository (Mon Jun 29 19:48:35 UTC 2015 / test number 591)
+failed to clean environment
+failed to setup environment
+Mon Jun 29 19:48:35 UTC 2015
+Finished test suite in 3.921 seconds

@@ -1,0 +1,3 @@
+22:30:10.287097 Failed to read input
+22:30:10.287270 Error: FTP server, read zero
+22:30:10.287418 Exited from sysread_or_die() at ./ftpserver.pl line 3000. FTP server, read zero

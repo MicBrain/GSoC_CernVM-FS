@@ -1,0 +1,7 @@
+This directory contains some useful bits and pieces related to cvmfs.
+
+check_cvmfs.sh
+Nagios check for the cvmfs client
+
+tools
+Python scripts to access repository catalogs

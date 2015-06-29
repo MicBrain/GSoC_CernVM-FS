@@ -1,0 +1,17 @@
+Installation Instructions
+=========================
+
+The CernVM-FS build system uses cmake.  In order to compile and
+install, run from the source directory
+
+    mkdir -p build
+    cd build
+    cmake ../
+    make
+    sudo make install
+
+In order to build the unit tests in addition, use
+`cmake -DBUILD_UNITTESTS=yes ../`
+
+For more details, please see the [technical report](http://cernvm.cern.ch/portal/filesystem/techinformation).
+

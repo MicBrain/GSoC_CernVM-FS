@@ -1,0 +1,18 @@
+21:55:45.255645 ====> Client connect
+21:55:45.255759 accept_connection 3 returned 4
+21:55:45.255814 accept_connection 3 returned 0
+21:55:45.294667 Read 97 bytes
+21:55:45.294748 Process 97 bytes request
+21:55:45.294803 Got request: GET /we/are/all/twits/42 HTTP/1.1
+21:55:45.294849 Requested test number 42 part 0
+21:55:45.294925 - request found to be complete
+21:55:45.295075 Wrote request (97 bytes) input to log/server.input
+21:55:45.295176 Send response test42 section <data>
+21:55:45.295269 connection close instruction "swsclose" found in response
+21:55:45.295386 Sent off 120 bytes
+21:55:45.295459 Response sent (120 bytes) and written to log/server.response
+21:55:45.295534 instructed to close connection after server-reply
+21:55:45.295582 ====> Client disconnect 0
+21:55:45.400420 select() failed with error: (4) Interrupted system call
+21:55:45.400549 signalled to die
+21:55:45.400667 ========> IPv4 sws (port 8990 pid: 12135) exits with signal (2)

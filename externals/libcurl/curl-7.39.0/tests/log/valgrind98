@@ -1,0 +1,22 @@
+==22820== Memcheck, a memory error detector
+==22820== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==22820== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==22820== Command: /home/ubuntu/workspace/externals/libcurl/curl-7.39.0/src/.libs/lt-curl --output log/curl98.out --include --trace-ascii log/trace98 --trace-time -T - -H Transfer-Encoding: -H Content-Length:\ 14 http://127.0.0.1:8990/98
+==22820== Parent PID: 22819
+==22820== 
+==22820== 
+==22820== HEAP SUMMARY:
+==22820==     in use at exit: 20,824 bytes in 581 blocks
+==22820==   total heap usage: 587 allocs, 6 frees, 25,816 bytes allocated
+==22820== 
+==22820== LEAK SUMMARY:
+==22820==    definitely lost: 0 bytes in 0 blocks
+==22820==    indirectly lost: 0 bytes in 0 blocks
+==22820==      possibly lost: 0 bytes in 0 blocks
+==22820==    still reachable: 20,824 bytes in 581 blocks
+==22820==         suppressed: 0 bytes in 0 blocks
+==22820== Reachable blocks (those to which a pointer was found) are not shown.
+==22820== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==22820== 
+==22820== For counts of detected and suppressed errors, rerun with: -v
+==22820== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

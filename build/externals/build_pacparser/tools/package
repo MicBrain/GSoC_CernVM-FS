@@ -1,0 +1,66 @@
+#!/bin/bash -e
+
+USAGE="
+Usage: $0 [-n] [-v version]\n
+-n        : Create a new release. Tag the current repository revision as version\n
+-v version: Specify the version. If not specified, the latest hg tag is used. \n
+            This option is required for a new release.\n
+"
+
+while getopts "nv:" flag
+do
+  if [ "$flag" = "n" ]; then
+    newrelease="yes"
+  elif [ "$flag" = "v" ]; then
+    ver=$OPTARG
+  elif [ "$flag" = "?" ]; then
+    echo -e $USAGE
+    exit 2
+  fi
+done
+
+if [ "$newrelease" = "yes" ]; then
+  if [ -z "$ver" ];then
+    echo "Version should be specified while creating a new release."
+    echo -e $USAGE
+    exit 2
+  else
+    echo -n "Are you sure you want to create a new release and tag the current "
+    echo -n "repository revision as $ver (y/n): "
+    read response
+    if [ $response != "y" ]; then
+      echo "You said no. Not moving ahead."
+      exit 0
+    fi
+    git tag $ver
+  fi
+fi
+
+if [ -z "$ver" ]; then
+  ver=$(git describe --always --tags --candidate=100 |\
+	  awk -F- 'NR == 1 {print $1 "-" $2}')
+fi
+
+cd $(dirname $0); tools_dir=$PWD; cd - > /dev/null
+
+pkgdir=$tools_dir/packages/pacparser-$ver; rm -rf $pkgdir*; mkdir -p $pkgdir
+pkg=pacparser-${ver}.tar.gz
+
+mkdir -p $tools_dir/packages
+pushd $tools_dir/.. > /dev/null
+git archive --format=tar HEAD | (cd $pkgdir && tar xf - --exclude debian)
+
+# Create a version string. This is used at the time of build.
+echo "VERSION=$ver" > $pkgdir/src/version.mk
+
+# Create the tarball.
+pushd $tools_dir/packages > /dev/null
+tar czf $(basename $pkg) $(basename $pkgdir)
+rm -rf $pkgdir; mkdir -p $pkgdir
+popd > /dev/null
+
+# Create the directory to be used for debian package.
+git archive --format=tar HEAD | (cd $pkgdir && tar xf -)
+echo "VERSION=$ver" > $pkgdir/src/version.mk
+
+popd > /dev/null

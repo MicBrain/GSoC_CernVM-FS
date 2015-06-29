@@ -1,0 +1,4 @@
+22:30:10.406895 select() failed with error: (4) Interrupted system call
+22:30:10.407640 unlink(http.sock) = 0 (Success)
+22:30:10.407766 signalled to die
+22:30:10.407924 ========> unix sws (http.sock pid: 20718) exits with signal (15)

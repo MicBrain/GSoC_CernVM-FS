@@ -1,0 +1,3 @@
+22:30:10.287653 Failed to read input
+22:30:10.287828 Error: IMAP server, read zero
+22:30:10.287932 Exited from sysread_or_die() at ./ftpserver.pl line 3000. IMAP server, read zero

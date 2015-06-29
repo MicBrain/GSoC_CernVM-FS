@@ -1,0 +1,2 @@
+/home/ubuntu/workspace/build/externals/build_googletest/CMakeFiles/gtest.dir
+/home/ubuntu/workspace/build/externals/build_googletest/CMakeFiles/gtest_main.dir
