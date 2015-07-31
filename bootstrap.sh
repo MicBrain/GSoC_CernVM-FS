@@ -113,3 +113,4 @@ patch_external "sparsehash"  "fix_sl4_compilation.patch"
 
 # create a hint that bootstrapping is already done
 touch "$externals_build_dir/.decompressionDone"
+
