@@ -89,6 +89,7 @@ mkdir -p $externals_build_dir
 
 do_extract  "c-ares"      "c-ares-${CARES_VERSION}.tar.gz"
 do_extract  "libcurl"     "curl-${CURL_VERSION}.tar.gz"
+do_extract  "nghttp2"     "nghttp2-${NGHTTP_VERSION}.tar.gz"
 do_extract  "pacparser"   "pacparser-${PACPARSER_VERSION}.tar.gz"
 do_extract  "zlib"        "zlib-${ZLIB_VERSION}.tar.gz"
 do_extract  "sparsehash"  "sparsehash-${SPARSEHASH_VERSION}.tar.gz"
