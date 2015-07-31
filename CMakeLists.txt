@@ -170,6 +170,7 @@ option (INSTALL_PUBLIC_KEYS     "Install public key chain for CERN, EGI, and OSG
 option (INSTALL_BASH_COMPLETION "Install bash completion rules for cvmfs* commands in /etc"        ON)
 option (SQLITE3_BUILTIN         "Don't use system SQLite3"                                         ON)
 option (LIBCURL_BUILTIN         "Don't use system libcurl"                                         ON)
+option (NGHTTP_BUILTIN          "Don't use system nghttp2"                                         ON)
 option (PACPARSER_BUILTIN       "Don't use system installation of pacparser"                       ON)
 option (ZLIB_BUILTIN            "Don't use system zlib"                                            ON)
 option (SPARSEHASH_BUILTIN      "Don't use system installation of google sparse hash"              ON)
