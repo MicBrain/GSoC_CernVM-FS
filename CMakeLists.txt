@@ -350,7 +350,7 @@ else (NGHTTP_BUILTIN)
 endif (NGHTTP_BUILTIN)
   
 if (SQLITE3_BUILTIN)
-  include (${NGHTTP_BUILTIN_LOCATION}/CVMFS-CMakeLists.txt)
+  include (${SQLITE3_BUILTIN_LOCATION}/CVMFS-CMakeLists.txt)
   set (SQLITE3_LIBRARY "")
 else (SQLITE3_BUILTIN)
   find_package (SQLite3 REQUIRED)
