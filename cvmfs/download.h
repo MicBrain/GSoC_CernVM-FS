@@ -234,6 +234,20 @@ struct JobInfo {
   unsigned backoff_ms;
 };  // JobInfo
 
+/** Gives the opporunity to test file downloads using regular 
+ * option (without pipelining or multiplexing).
+ */
+class Regular_Test {
+public:
+    Regular_Test(JobInfo*);
+    Regular_Test(std::vector<JobInfo*>);
+private:
+    double download_single_regular(char*);
+    void getting_started();
+    double truncate_double(double, int);
+    static void handle_easy_error(CURLcode, std::string);
+    static size_t write_callback(void*, size_t, size_t, FILE*);
+};
 
 /**
  * Manages blocks of arrays of curl_slist storing header strings.  In contrast
