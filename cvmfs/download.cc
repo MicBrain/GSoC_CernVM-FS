@@ -559,6 +559,110 @@ void *DownloadManager::MainDownload(void *data) {
 
 
 
+/////////////////////
+
+Regular_Test::Regular_Test(JobInfo *info) {
+    getting_started();
+    std::string urlLink = *(info->url);
+    char *stringToPass = new char[urlLink.size() + 1];
+    std::copy(urlLink.begin(), urlLink.end(), stringToPass);
+    stringToPass[urlLink.size()] = '\0';
+    std::cout << "Downloading file in ";
+    double duration = download_single_regular(stringToPass);
+    std::cout << duration << " seconds" << std::endl; 
+    delete[] stringToPass;
+}
+
+Regular_Test::Regular_Test(std::vector<JobInfo*> infos) {
+    double result;
+    int length = infos.size();
+    std::string message = "curl_easy_setopt";
+    double overall;
+    high_resolution_clock::time_point start = high_resolution_clock::now();
+    CURL *session;
+    CURLcode option;
+    CURLcode curl_code;
+    session = curl_easy_init();
+    if (session) {
+        FILE *devnull = fopen("/dev/null", "w+");
+        curl_easy_setopt(session, CURLOPT_TCP_KEEPIDLE, 50L);
+        for (int index = 0; index < length; index++) {
+            std::string urlLink = *(infos[index]->url);
+            char *stringToPass = new char[urlLink.size() + 1];
+            std::copy(urlLink.begin(), urlLink.end(), stringToPass);
+            stringToPass[urlLink.size()] = '\0';
+            option = curl_easy_setopt(session, CURLOPT_URL, stringToPass);
+            handle_easy_error(option, message);
+            option = curl_easy_setopt(session, CURLOPT_WRITEFUNCTION, write_callback);
+            handle_easy_error(option, message);
+            option = curl_easy_setopt(session, CURLOPT_WRITEDATA, devnull);
+            handle_easy_error(option, message);
+            curl_code = curl_easy_perform(session);
+            delete[] stringToPass;
+        }
+        fclose(devnull);
+        curl_easy_cleanup(session);
+    }
+    high_resolution_clock::time_point end = high_resolution_clock::now();
+    double duration = std::chrono::duration_cast<std::chrono::microseconds>( end- start ).count();
+    result = truncate_double(duration/1000000, 4);
+    std::cout << "Downloading files in " << result << " seconds" << std::endl;
+}
+
+double Regular_Test::download_single_regular(char* url) {
+  double result;
+  std::string message = "curl_easy_setopt";
+  high_resolution_clock::time_point start = high_resolution_clock::now();
+  CURL *session;
+  CURLcode option;
+  CURLcode curl_code;
+  session = curl_easy_init();
+  if (session) {
+    FILE *devnull = fopen("/dev/null", "w+");
+    option = curl_easy_setopt(session, CURLOPT_URL, url);
+    handle_easy_error(option, message);
+    option = curl_easy_setopt(session, CURLOPT_WRITEFUNCTION, write_callback);
+    handle_easy_error(option, message);
+    option = curl_easy_setopt(session, CURLOPT_WRITEDATA, devnull);
+    handle_easy_error(option, message);
+    curl_code = curl_easy_perform(session);
+    fclose(devnull);
+    curl_easy_cleanup(session);
+  }
+  high_resolution_clock::time_point end = high_resolution_clock::now();
+  double duration = std::chrono::duration_cast<std::chrono::microseconds>( end- start ).count();
+  result = truncate_double(duration/1000000, 4);
+  return result;
+}
+
+void Regular_Test::getting_started() {
+    std::cout << "You are running the <Regular Request> option of Download Manager." <<std::endl;
+    std::cout << "This is a sample test, which checks if the regular download option works properly." << std::endl;
+    return;
+}
+
+ size_t Regular_Test::write_callback(void *ptr, size_t size, size_t nmemb, FILE *stream) {
+    size_t written = fwrite(ptr, size, nmemb, stream);
+    return written;
+}
+
+void Regular_Test::handle_easy_error(CURLcode ret, std::string message) {
+  if(ret != CURLE_OK){
+      std::cerr <<"Error: Fatal problem has occured with " << message << \
+            "functionality" << std::endl;
+  }
+  return;
+}
+
+double Regular_Test::truncate_double(double value, int positions)
+{
+    double temporary = 0.0;
+    temporary = (int) (value * pow(10, positions));
+    temporary /= pow(10, positions);
+    return temporary;
+}
+
+
 
 
 
