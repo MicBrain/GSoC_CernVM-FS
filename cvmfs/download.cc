@@ -45,6 +45,9 @@
 #include <cstdlib>
 #include <cstring>
 #include <set>
+#include <math.h>
+#include <iostream>
+#include <chrono>
 
 #include "atomic.h"
 #include "compression.h"
