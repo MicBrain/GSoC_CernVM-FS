@@ -258,6 +258,21 @@ private:
     static size_t write_callback(void*, size_t, size_t, FILE*);
 };
 
+/** Gives the opporunity to test file downloads using multiplexing 
+ * option (using HTTP2).
+ */
+class Multiplexing_Test {
+public:
+    Multiplexing_Test(JobInfo*, int);
+private:
+    static void *curl_hnd[NUM_HANDLES];
+    static int num_transfers;
+    static int hnd2num(CURL*);
+    static void dump(const char*, int, unsigned char*, size_t, char);
+    static int my_trace(CURL*, curl_infotype, char*, size_t, void*);
+    static void setup(CURL*, int, JobInfo*);
+};
+
 /**
  * Manages blocks of arrays of curl_slist storing header strings.  In contrast
  * to curl's slists, these ones don't take ownership of the header strings.
