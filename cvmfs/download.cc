@@ -657,6 +657,195 @@ double Regular_Test::truncate_double(double value, int positions)
     return temporary;
 }
 
+void* Multiplexing_Test::curl_hnd[NUM_HANDLES];
+int Multiplexing_Test::num_transfers;
+    
+Multiplexing_Test::Multiplexing_Test(JobInfo *info, int amount) {
+  clock_t start, end;
+  double cpu_time_used;
+  start = clock();
+  CURL *easy[NUM_HANDLES];
+  CURLM *multi_handle;
+  int i;
+  int still_running; 
+  if(amount >= 1) {
+      num_transfers = amount;
+  } else {
+      num_transfers = 2;
+  }
+  multi_handle = curl_multi_init();
+  for(i = 0; i < num_transfers; i++) {
+    easy[i] = curl_easy_init();
+    setup(easy[i], i, info);
+    curl_multi_add_handle(multi_handle, easy[i]);
+  }
+  curl_multi_setopt(multi_handle, CURLMOPT_PIPELINING, CURLPIPE_MULTIPLEX);
+  curl_multi_perform(multi_handle, &still_running);
+  do {
+    struct timeval timeout;
+    int rc;
+    CURLMcode mc;
+    fd_set fdread;
+    fd_set fdwrite;
+    fd_set fdexcep;
+    int maxfd = -1;
+    long curl_timeo = -1;
+    FD_ZERO(&fdread);
+    FD_ZERO(&fdwrite);
+    FD_ZERO(&fdexcep);
+    timeout.tv_sec = 1;
+    timeout.tv_usec = 0;
+    curl_multi_timeout(multi_handle, &curl_timeo);
+    if(curl_timeo >= 0) {
+      timeout.tv_sec = curl_timeo / 1000;
+      if(timeout.tv_sec > 1)
+        timeout.tv_sec = 1;
+      else
+        timeout.tv_usec = (curl_timeo % 1000) * 1000;
+    }
+    mc = curl_multi_fdset(multi_handle, &fdread, &fdwrite, &fdexcep, &maxfd);
+    if(mc != CURLM_OK)
+    {
+      fprintf(stderr, "curl_multi_fdset() failed, code %d.\n", mc);
+      break;
+    }
+    
+    if(maxfd == -1) {
+#ifdef _WIN32
+      Sleep(100);
+      rc = 0;
+#else
+      struct timeval wait = { 0, 100 * 1000 };
+      rc = select(0, NULL, NULL, NULL, &wait);
+#endif
+    }
+    else {
+      rc = select(maxfd+1, &fdread, &fdwrite, &fdexcep, &timeout);
+    }
+ 
+    switch(rc) {
+    case -1:
+      break;
+    case 0:
+    default:
+      curl_multi_perform(multi_handle, &still_running);
+      break;
+    }
+  } while(still_running);
+  curl_multi_cleanup(multi_handle);
+  for(i=0; i<num_transfers; i++)
+    curl_easy_cleanup(easy[i]);
+  end = clock();
+  cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+  printf("\n");
+  printf("DOWNLOAD TIME IS ");
+  printf("%lf", cpu_time_used);
+  printf("seconds");
+  printf("\n");
+}
+
+
+/** This function does handle to number lookup. It is highly 
+ * ineffective when we do many transfers. */ 
+int Multiplexing_Test::hnd2num(CURL *hnd) {
+  for(int index = 0; index< num_transfers; index++) {
+    if(curl_hnd[index] == hnd)
+      return index;
+  }
+  return 0;
+}
+
+void Multiplexing_Test::dump(const char *text, int num, unsigned char *ptr, size_t size,
+          char nohex) {
+  unsigned int width=0x10;
+  if(nohex)
+    width = 0x40;
+  fprintf(stderr, "%d %s, %ld bytes (0x%lx)\n",
+          num, text, (long)size, (long)size);
+  for(size_t index = 0; index < size; index+=width) {
+    fprintf(stderr, "%4.4lx: ", (long)index);
+    if(!nohex) {
+      for(size_t counter = 0; counter < width; counter++)
+        if(index + counter < size)
+          fprintf(stderr, "%02x ", ptr[index + counter]);
+        else
+          fputs("   ", stderr);
+    }
+    for(size_t counter = 0; (counter < width) && (index + counter < size); counter++) {
+      if (nohex && (index + counter + 1 < size) && ptr[index + counter]==0x0D && ptr[index + counter + 1]==0x0A) {
+        index+=(counter + 2 - width);
+        break;
+      }
+      fprintf(stderr, "%c",
+              (ptr[index + counter]>=0x20) && (ptr[index + counter]<0x80)?ptr[index + counter]:'.');
+      if (nohex && (index + counter + 2 < size) && ptr[index + counter + 1]==0x0D && ptr[index + counter + 2]==0x0A) {
+        index+=(counter + 3 - width);
+        break;
+      }
+    }
+    fputc('\n', stderr); 
+  }
+}
+
+int Multiplexing_Test::my_trace(CURL *handle, curl_infotype type,
+             char *data, size_t size,
+             void *userp) {
+  const char *text;
+  int num = hnd2num(handle);
+  (void)handle;
+  (void)userp;
+  switch (type) {
+  case CURLINFO_TEXT:
+    fprintf(stderr, "== %d Info: %s", num, data);
+  default:
+    return 0;
+  case CURLINFO_HEADER_OUT:
+    text = "=> Send header";
+    break;
+  case CURLINFO_DATA_OUT:
+    text = "=> Send data";
+    break;
+  case CURLINFO_SSL_DATA_OUT:
+    text = "=> Send SSL data";
+    break;
+  case CURLINFO_HEADER_IN:
+    text = "<= Recv header";
+    break;
+  case CURLINFO_DATA_IN:
+    text = "<= Recv data";
+    break;
+  case CURLINFO_SSL_DATA_IN:
+    text = "<= Recv SSL data";
+    break;
+  }
+  dump(text, num, (unsigned char *)data, size, 1);
+  return 0;
+}
+
+void Multiplexing_Test::setup(CURL *hnd, int num, JobInfo *info) {
+  std::string urlLink = *(info->url);
+  char *stringToPass = new char[urlLink.size() + 1];
+  std::copy(urlLink.begin(), urlLink.end(), stringToPass);
+  stringToPass[urlLink.size()] = '\0';
+  FILE *out;
+  char filename[128];
+  sprintf(filename, "dl-%d", num);
+  out = fopen(filename, "wb");
+  curl_easy_setopt(hnd, CURLOPT_WRITEDATA, out);
+  curl_easy_setopt(hnd, CURLOPT_URL, stringToPass);
+  curl_easy_setopt(hnd, CURLOPT_VERBOSE, 1L);
+  curl_easy_setopt(hnd, CURLOPT_DEBUGFUNCTION, my_trace);
+  curl_easy_setopt(hnd, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_2_0);
+  curl_easy_setopt(hnd, CURLOPT_SSL_VERIFYPEER, 0L);
+  curl_easy_setopt(hnd, CURLOPT_SSL_VERIFYHOST, 0L);
+ 
+#if (CURLPIPE_MULTIPLEX > 0)
+  curl_easy_setopt(hnd, CURLOPT_PIPEWAIT, 1L);
+#endif
+ 
+  curl_hnd[num] = hnd;
+  delete[] stringToPass;
+}
 
 //------------------------------------------------------------------------------
 
