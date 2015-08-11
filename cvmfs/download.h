@@ -31,6 +31,11 @@
 #include "sink.h"
 #include "statistics.h"
 
+#ifndef CURLPIPE_MULTIPLEX
+#define CURLPIPE_MULTIPLEX 0
+#endif
+
+#define NUM_HANDLES 1000
 
 namespace download {
 
