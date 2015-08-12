@@ -6,8 +6,6 @@ sh ./configure .... \
  --disable-python-bindings
  --disable-failmalloc
  --disable-xmltest
- --disable-assert 
- --disable-largefile  
  
 
  
