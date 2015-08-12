@@ -6,6 +6,7 @@ sh ./configure .... \
  --disable-python-bindings
  --disable-failmalloc
  --disable-xmltest
- 
-
- 
+ --disable-app
+ --disable-hpack-tools
+ --disable-asio
+ --disable-examples
