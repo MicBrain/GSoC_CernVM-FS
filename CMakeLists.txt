@@ -170,7 +170,6 @@ option (INSTALL_PUBLIC_KEYS     "Install public key chain for CERN, EGI, and OSG
 option (INSTALL_BASH_COMPLETION "Install bash completion rules for cvmfs* commands in /etc"        ON)
 option (SQLITE3_BUILTIN         "Don't use system SQLite3"                                         ON)
 option (LIBCURL_BUILTIN         "Don't use system libcurl"                                         ON)
-option (NGHTTP_BUILTIN          "Don't use system nghttp2"                                         ON)
 option (PACPARSER_BUILTIN       "Don't use system installation of pacparser"                       ON)
 option (ZLIB_BUILTIN            "Don't use system zlib"                                            ON)
 option (SPARSEHASH_BUILTIN      "Don't use system installation of google sparse hash"              ON)
@@ -341,14 +340,6 @@ endif (LIBCURL_BUILTIN)
 include (${VJSON_BUILTIN_LOCATION}/CVMFS-CMakeLists.txt)
 set (INCLUDE_DIRECTORIES ${INCLUDE_DIRECTORIES} ${VJSON_BUILTIN_LOCATION}/src)
 
-if (NGHTTP_BUILTIN)
-  include (${LIBCURL_BUILTIN_LOCATION}/CVMFS-CMakeLists.txt)
-  set (NGHTTP_LIBRARY "")
-else (NGHTTP_BUILTIN)
-  find_package (NGHTTP REQUIRED)
-  set (INCLUDE_DIRECTORIES ${INCLUDE_DIRECTORIES} ${NGHTTP_INCLUDE_DIRS})
-endif (NGHTTP_BUILTIN)
-  
 if (SQLITE3_BUILTIN)
   include (${SQLITE3_BUILTIN_LOCATION}/CVMFS-CMakeLists.txt)
   set (SQLITE3_LIBRARY "")
@@ -366,7 +357,7 @@ else (ZLIB_BUILTIN)
 endif (ZLIB_BUILTIN)
 
 include (${SHA2_BUILTIN_LOCATION}/CVMFS-CMakeLists.txt)
-
+include (${LIBCURL_BUILTIN_LOCATION}/CVMFS-CMakeLists.txt)
 
 if (NOT MACOSX)
   set (HAVE_LIB_RT TRUE)
