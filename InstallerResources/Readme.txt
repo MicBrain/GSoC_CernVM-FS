@@ -26,4 +26,3 @@ Developed by Jakob Blomer and Predreag Buncic at CERN (2009).
 The previous CVMFS version was developed by Leandro Franco
 and Predrag Buncic at CERN (2008).
 We follow a BSD-style license.
-
