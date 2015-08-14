@@ -556,6 +556,8 @@ void *DownloadManager::MainDownload(void *data) {
   return NULL;
 }
 
+//------------------------------------------------------------------------------
+
 Regular_Test::Regular_Test(JobInfo *info) {
     getting_started();
     std::string urlLink = *(info->url);
