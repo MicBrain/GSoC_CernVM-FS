@@ -304,6 +304,23 @@ class HeaderLists {
   std::vector<curl_slist *> blocks_;  // List of curl_slist blocks
 };
 
+/** A vectorized interface, which makes sure that a number of 
+ * download jobs can be sent and received at once.
+ */
+class MultiFetcher {
+public:
+    MultiFetcher();
+    ~MultiFetcher();
+    void add(JobInfo*);
+    JobInfo* WaitForNext();
+    std::vector<JobInfo*> getJobInfoList();
+private:
+    int CallCounter;
+    int IndexCounter;
+    std::vector<JobInfo*> JobInfoList;
+    std::vector<int> IndexList;
+    int randomIndex(int, int);
+};
 
 class DownloadManager {
   FRIEND_TEST(T_Download, ValidateGeoReply);
