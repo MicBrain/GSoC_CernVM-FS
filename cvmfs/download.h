@@ -274,6 +274,32 @@ private:
     static void setup(CURL*, int, JobInfo*);
 };
 
+/** A vectorized interface, which makes sure that a number of 
+ * download jobs can be sent and received at once.
+ */
+class MultiFetcher {
+public:
+    MultiFetcher();
+    ~MultiFetcher();
+    void Add(JobInfo*);
+    JobInfo* WaitForNext();
+    std::vector<JobInfo*> getJobInfoList();
+    std::vector<JobInfo*> getJobInfoQueue();
+private:
+    bool firstTime;
+    int CallCounter;
+    int IndexCounter;
+    int CalculateLength;
+    int ThresholdCounter;
+    const int THRESHOLD = 3;
+    int NegativeIndexCounter;
+    int randomIndex(int, int);
+    std::vector<int> IndexList;
+    std::vector<int> IndexQueue;
+    std::vector<JobInfo*> JobInfoList;
+    std::vector<JobInfo*> JobInfoQueue;
+};
+
 /**
  * Manages blocks of arrays of curl_slist storing header strings.  In contrast
  * to curl's slists, these ones don't take ownership of the header strings.
