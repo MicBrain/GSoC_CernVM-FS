@@ -849,7 +849,122 @@ void Multiplexing_Test::setup(CURL *hnd, int num, JobInfo *info) {
   delete[] stringToPass;
 }
 
-/////////////////////////
+MultiFetcher::MultiFetcher() {
+    CallCounter = 0;
+    IndexCounter = 0;
+    CalculateLength = 0;
+    ThresholdCounter = 1;       
+    NegativeIndexCounter = -1;
+    firstTime = true;
+    JobInfoList.clear();
+    IndexList.clear();
+    JobInfoQueue.clear();
+    IndexQueue.clear();
+}
+
+MultiFetcher::~MultiFetcher() {
+    std::vector<JobInfo*> empty_JobInfoList;
+    std::vector<int> emptyIndexList;
+    std::vector<JobInfo*> empy_JobInfoQueue;
+    std::vector<int> empty_IndexQueue;
+    JobInfoList.swap(empty_JobInfoList);
+    JobInfoQueue.swap(empy_JobInfoQueue);
+    IndexList.swap(emptyIndexList);
+    IndexQueue.swap(empty_IndexQueue);
+}
+
+void MultiFetcher::Add(JobInfo *info) {
+    
+    if (ThresholdCounter <= THRESHOLD) {
+        IndexList.push_back(IndexCounter);
+        JobInfoList.push_back(info);
+        IndexCounter++;
+        ThresholdCounter++;
+    } else {
+        JobInfoQueue.push_back(info);
+        IndexQueue.push_back(NegativeIndexCounter);
+        NegativeIndexCounter--;
+        ThresholdCounter++;
+    }
+}
+
+std::vector<JobInfo*> MultiFetcher::getJobInfoList() {
+    return JobInfoList;
+}
+
+std::vector<JobInfo*> MultiFetcher::getJobInfoQueue() {
+    return JobInfoQueue;
+}
+
+JobInfo* MultiFetcher::WaitForNext() {
+    if (ThresholdCounter > THRESHOLD + 1) {
+        if (firstTime) {
+            firstTime = false;
+            int randomElement = randomIndex(0, IndexList.size() - 2);
+            iter_swap(IndexList.begin() + randomElement, IndexList.begin() + IndexList.size() - 1);
+            int finalIndex = IndexList[IndexList.size() - 1];
+            IndexList[IndexList.size() - 1] = IndexQueue[CalculateLength];
+            CalculateLength++;
+            ThresholdCounter--;
+            return JobInfoList[finalIndex];
+        } else {
+            int RandomIndex;
+            RandomIndex = randomIndex(0, IndexList.size() - 2);
+            iter_swap(IndexList.begin() + RandomIndex, IndexList.begin() + IndexList.size() - 1);
+            int resultIndex = IndexList[IndexList.size() - 1];
+            if (CalculateLength < JobInfoQueue.size()) {
+                IndexList[IndexList.size() - 1] = IndexQueue[CalculateLength];
+                CalculateLength++;
+            }
+            ThresholdCounter--;
+            if (resultIndex >= 0) {
+                return JobInfoList[resultIndex];
+            } else {
+                resultIndex = resultIndex * (-1) - 1;
+                return JobInfoQueue[resultIndex];
+            }
+        }
+    }
+    else {
+        int RandomIndex;
+        int length = JobInfoList.size();
+        if (length - CallCounter - 1 < 0) {
+            return NULL;
+        }
+        int max_limit = length - CallCounter - 1;
+        if (max_limit == 0) {
+            CallCounter++;
+            int myIndex = IndexList[0]; 
+            if (myIndex >= 0) {
+                return JobInfoList[myIndex];
+            } else {
+                myIndex = myIndex * (-1) - 1;
+                return JobInfoQueue[myIndex];
+            }
+        }
+        RandomIndex = randomIndex(0, max_limit);
+        iter_swap(IndexList.begin() + RandomIndex, IndexList.begin() + max_limit - 1);
+        int FinalIndex = max_limit;
+        CallCounter++;
+        int currentIndex;
+        currentIndex = IndexList[FinalIndex];
+        if (currentIndex >= 0) {
+            return JobInfoList[currentIndex];
+        } else {
+            currentIndex = currentIndex * (-1) - 1;
+            return JobInfoQueue[currentIndex];
+        }
+    }
+}
+
+int MultiFetcher::randomIndex(int min_bound, int upper_bound) {
+    static bool init = false;
+    if (!init) {
+        srand(time(NULL));
+        init = true;
+    }
+    return rand()%(upper_bound - min_bound) + min_bound;
+}
 
 
 //------------------------------------------------------------------------------
