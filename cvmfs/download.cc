@@ -849,58 +849,8 @@ void Multiplexing_Test::setup(CURL *hnd, int num, JobInfo *info) {
   delete[] stringToPass;
 }
 
-MultiFetcher::MultiFetcher() {
-    CallCounter = 0;
-    IndexCounter = 0;
-    JobInfoList.clear();
-    IndexList.clear();
-}
+/////////////////////////
 
-MultiFetcher::~MultiFetcher() {
-    std::vector<JobInfo*> empty_JobInfoList;
-    std::vector<int> emptyIndexList;
-    JobInfoList.swap(empty_JobInfoList);
-    IndexList.swap(emptyIndexList);
-}
-
-void MultiFetcher::add(JobInfo *info) {
-    IndexList.push_back(IndexCounter);
-    JobInfoList.push_back(info);
-    IndexCounter++;
-}
-
-std::vector<JobInfo*> MultiFetcher::getJobInfoList() {
-    return JobInfoList;
-}
-
-JobInfo* MultiFetcher::WaitForNext() {
-    int length = JobInfoList.size();
-    int RandomIndex;
-    if (length - CallCounter - 1 < 0) {
-        return NULL;
-    }
-    int max_limit = length - CallCounter - 1;
-    if (max_limit == 0) {
-        CallCounter++;
-        return JobInfoList[IndexList[0]];
-    }
-    RandomIndex = randomIndex(0, max_limit);
-    int position;
-    position = RandomIndex;
-    iter_swap(IndexList.begin() + RandomIndex, IndexList.begin() + max_limit);
-    int FinalIndex = max_limit;
-    CallCounter++;
-    return JobInfoList[IndexList[FinalIndex]];
-}
-
-int MultiFetcher::randomIndex(int min_bound, int upper_bound) {
-    static bool init = false;
-    if (!init) {
-        srand(time(NULL));
-        init = true;
-    }
-    return rand()%(upper_bound - min_bound) + min_bound;
-}
 
 //------------------------------------------------------------------------------
 
