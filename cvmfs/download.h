@@ -291,7 +291,7 @@ private:
     int IndexCounter;
     int CalculateLength;
     int ThresholdCounter;
-    const int THRESHOLD = 22;
+    const int THRESHOLD = 32;
     int NegativeIndexCounter;
     int randomIndex(int, int);
     std::vector<int> IndexList;
