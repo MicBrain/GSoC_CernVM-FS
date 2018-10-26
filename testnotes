@@ -1,3 +1,6 @@
+
+//i am learning opensource.
+
 Parallel kernel compile:
   download linux 2.6.18.8 into repository
   make defconfig, safe .config
@@ -7,7 +10,7 @@ Parallel kernel compile:
   rm -rf /tmp/kbuild/; mkdir /tmp/kbuild/; cp ../.config /tmp/kbuild/.config
   make O=/tmp/kbuild/ -j8 2>/tmp/kbuild/log
 
-Procedure:
+Procedure:;;
   configure CMVFS_REPOSITORIES for atlas,lhcb and check service cvmfs restart
   reboot + ls /opt
   stat /opt/lhcb/lib/lhcb/PANORAMIX/PANORAMIX_v18r1/Makefile
@@ -15,7 +18,7 @@ Procedure:
   . /opt/lhcb/etc/login.sh
   SetupProject Davinci
   echo 3 > /proc/sys/vm/drop_caches
-  SetupProject Davinci
+  SetupProject DaVinci
   cvmfs-talk -i lhcb open catalogs | sort (+ check memory)
 
   build kernel
